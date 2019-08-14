@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Facebook Page Post ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_Fbpagepost
+ * @author 		NetGo
+ * @dev			netattingomails@gmail.com
+ *
+ */
+-->
+<config>
+  <modules>
+    <Netgo_Fbpagepost>
+      <version>0.1.0</version>
+    </Netgo_Fbpagepost>
+  </modules>
+  <frontend>
+    <routers>
+      <fbpagepost>
+        <use>standard</use>
+          <args>
+            <module>Netgo_Fbpagepost</module>
+            <frontName>fbposts</frontName>
+          </args>
+      </fbpagepost>
+    </routers>
+		<layout>
+		  <updates>
+			<fbpagepost>
+			  <file>fbpagepost.xml</file>
+			</fbpagepost>
+		  </updates>
+		</layout>
+  </frontend>
+  <global>
+    <helpers>
+      <fbpagepost>
+        <class>Netgo_Fbpagepost_Helper</class>
+      </fbpagepost>
+    </helpers>
+	<blocks>
+	  <fbpagepost>
+		<class>Netgo_Fbpagepost_Block</class>
+	  </fbpagepost>
+	</blocks>
+  </global>
+</config> 

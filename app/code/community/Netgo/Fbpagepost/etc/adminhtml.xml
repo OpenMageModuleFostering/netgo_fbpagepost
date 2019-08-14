@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Facebook Page Post ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_Fbpagepost
+ * @author 		NetGo
+ * @dev			netattingomails@gmail.com
+ *
+ */
+-->
+	<config>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<facebookpage translate="title" module="fbpagepost">
+											<title>Facebook Page Section</title>
+											<sort_order>0</sort_order>
+										</facebookpage>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</config>

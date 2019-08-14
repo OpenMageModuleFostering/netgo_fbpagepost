@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <name>Netgo_Fbpagepost</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Display latest feeds of your Facebook page.</summary>
+    <description>This extension helps to display latest feeds of your Facebook page by only giving Facebook account page id.&#xD;
+&#xD;
+This extension allows to display the posts of Facebook page just by giving by Facebook account page id, secret id and App id. You can also switch the views of the post between grid view and list view.&#xD;
+</description>
+    <notes>First Preview Release</notes>
+    <authors><author><name>NetGo</name><user>NetAttiingo</user><email>netattingomails@gmail.com</email></author></authors>
+    <date>2015-07-22</date>
+    <time>09:11:21</time>
+    <contents><target name="magecommunity"><dir name="Netgo"><dir name="Fbpagepost"><dir name="Block"><file name="Index.php" hash="37442125464a69bfd518f04b81a99891"/><dir name="fb"><file name="base_facebook.php" hash="46ee7f3dfd00ba07216b456187ec493f"/><file name="facebook.php" hash="c055f5c199fd774220c10b54d76d9efa"/><file name="fb_ca_chain_bundle.crt" hash="c4290b9deb70d0bef2f88b67fc68c8ec"/></dir></dir><dir name="Helper"><file name="Data.php" hash="41718441401bb598040b7264977aba18"/></dir><dir name="controllers"><file name="IndexController.php" hash="3c1aed5764357bb2b0d9b2dac2b25669"/></dir><dir name="etc"><file name="adminhtml.xml" hash="2ec151092f0971f87764ea382e97a55f"/><file name="config.xml" hash="ae504cd3edc55c6c387116e39a6c5033"/><file name="system.xml" hash="7be34d56ac8396b65b6c445098c09b0c"/></dir></dir></dir><dir name="Mage"><dir name="Adminhtml"><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Diyoptions14375500494.php" hash="cfb145be2cb54fc4cf585ff7e3978952"/></dir></dir></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="fbpagepost.xml" hash="a788634fc59bd3dc7628ebe4ad1654d2"/></dir><dir name="template"><dir name="fbpagepost"><file name="index.phtml" hash="1913cc344c3642cd29f502e305f1f5cb"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="fbpagepost"><file name="fbpagepost.js" hash="6a60560fb44b0389ccbdecfa1fb3a649"/></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="fbpagepost"><file name="fbpagepost.css" hash="d8d0d7e58680f3c95b01c6ec41bcd549"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Netgo_Fbpagepost.xml" hash="c559a972281e543e79e982e7480dce94"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

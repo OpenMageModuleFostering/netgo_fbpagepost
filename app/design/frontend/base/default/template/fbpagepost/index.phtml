@@ -1,0 +1,64 @@
+<?php
+/***************************************
+ *** Facebook Page Post ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_Fbpagepost
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+?> 
+
+   <?php $pagefeed = $this->getFbpagepost(); ?>  
+    <?php
+	
+	if(!empty($pagefeed))
+	{
+	  $flag=1;
+	?>
+    <ul id="fbfeed" class="pagepostlist">
+           <?php
+               foreach($pagefeed['data'] as $post):
+											
+			?>
+        		 <li  id="<?php echo $flag; ?><?php echo ($flag%4); ?>">
+					 <div class="product_box">
+						  <div class="img_box">
+						   <a target="_blank" href="<?php echo $post['attachments']['data'][0]['url']; ?>">
+						  <img alt="" src="<?php   echo  $post['full_picture']; ?>">
+						  </a>
+						  </div>
+						 <div class="content"> 
+							 <div class="contant_box1"> <?php   echo  $post['message']; ?></div>
+							 <div class="date_box"><?php echo date("d/M/Y H:i", (strtotime($post['created_time']))) ?>  </div>
+						 </div>
+					 </div>
+				</li>
+				<?php
+				$flag++;
+              endforeach;
+            
+          
+            
+        ?>
+     </ul>
+	  <script>
+     jQuery(document).ready(function(){
+        setview(<?php echo Mage::getStoreConfig('facebookpage/facebookpagepost/fbview'); ?>);
+		});
+     </script>	
+	  	 
+	 <?php
+	 }else
+	  {
+	 ?>
+	 <div class="nopost"><h3>No Post Found!</h3></div>
+	   
+	 <?php
+	 }
+	 ?>
+	 
+ 

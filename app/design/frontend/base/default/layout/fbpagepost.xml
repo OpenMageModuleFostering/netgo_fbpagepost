@@ -1,0 +1,48 @@
+<?xml version="1.0"?>   
+<!--
+/***************************************
+ *** Facebook Page Post ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_Fbpagepost
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+-->
+<layout version="0.2.0">
+	<default>
+	  <reference name="head" >
+      <action method="addCss" ifconfig="facebookpage/facebookpagepost/fbenable"><stylesheet>fbpagepost/fbpagepost.css</stylesheet>
+	  </action>
+	  <action method="addJs" ifconfig="facebookpage/facebookpagepost/fbenable">
+                <script>fbpagepost/fbpagepost.js</script>
+      </action>
+     </reference>
+		<reference name="top.links">
+		  <action method="addLink" translate="label title" ifconfig="facebookpage/facebookpagepost/fbenable" >
+			<label>Facebook Page Post</label>
+			<url>fbposts</url>
+			<title>Facebook Page Post</title>
+			<prepare>true</prepare>
+			<position>100</position>
+		  </action>
+		</reference>
+	</default>
+  <fbpagepost_index_index >   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>  
+   
+   	
+    <reference name="content">   
+	  <block type="fbpagepost/index" name="fbpagepost_list" template="fbpagepost/index.phtml"/> 
+	  
+    </reference>   
+  </fbpagepost_index_index>   
+  
+ 
+</layout>   
+	

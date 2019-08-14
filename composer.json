@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Netgo_Fbpagepost",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Display latest feeds of your Facebook page.",
+    "authors": [
+    {
+        "name": "NetGo",
+        "email": "netattingomails@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Netgo_Fbpagepost",
+    "name": "openmage-module-fostering\/netgo_fbpagepost",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Display latest feeds of your Facebook page.",
     "authors": [
